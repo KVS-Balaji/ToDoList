@@ -1,0 +1,225 @@
+*:hover {
+  outline: 1px solid blue;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f2ef;
+}
+
+.home {
+  padding: 20px;
+  background-color: #f8f2ef;
+  color: black;
+  height: 100vh;
+}
+
+.home .user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 23px;
+  border: 1px solid #dad1c177;
+  max-width: max-content;
+  border-radius: 10px;
+  background-color: #dad1c1;
+  color: rgba(0, 0, 0, 0.76);
+  transition: 0.2s ease-in;
+}
+
+.home .user:hover {
+  background-color: #dad1c1d2;
+  box-shadow: 5px 5px 2px grey;
+}
+
+.home img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.home .headdiv {
+  display: flex;
+  justify-content: center;
+}
+
+.home .heading {
+  font-size: 50px;
+  max-width: max-content;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid black;
+  animation: typing 3s steps(60, end) infinite, blink-caret 0.2s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from {
+    border-right-color: transparent;
+  }
+  to {
+    border-right-color: black;
+  }
+}
+
+.createfield {
+  padding: 0;
+}
+
+.create_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create_form #tsknameinp {
+  height: 40px;
+  font-size: 25px;
+  width: 30%;
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  background-color: #dad1c177;
+  margin-right: 10px;
+  outline: none;
+  transition: 0.2s ease-in;
+  color: rgb(119, 115, 110);
+}
+
+.create_form #tsknameinp:hover {
+  box-shadow: 2px 2px;
+}
+
+.create_form .createtaskbtn {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.home .taskarea {
+  display: flex;
+  justify-content: center;
+  margin: 0 35%;
+  width: 30%;
+}
+
+.home .taskarea .norec {
+  text-align: center;
+  font-size: 30px;
+  animation: glow 0.7s infinite;
+}
+
+.home .taskarea .indivtask {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.home .taskarea .task {
+  width: 100%;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.home .taskarea .task {
+  display: flex;
+  font-size: 20px;
+}
+
+.home .taskarea .checkbox {
+  display: flex;
+  align-items: center;
+  padding-right: 0;
+}
+
+.home .taskarea .checkbox p {
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.home .taskarea .checkbox .line-through {
+  text-decoration: line-through;
+}
+
+.home .taskarea .icon {
+  cursor: pointer;
+
+}
+
+.rac {
+  min-height: 500px;
+  min-width: 500px;
+  position: absolute;
+  top: 65%;
+  transform: rotate(25deg);
+  transition: 1s ease-in;
+  animation: dance 1s infinite;
+}
+
+.rac1 {
+  left: -10%;
+}
+.rac2 {
+  left: 0%;
+}
+.rac3 {
+  left: 10%;
+}
+.rac4 {
+  left: 20%;
+}
+.rac5 {
+  left: 30%;
+}
+.rac6 {
+  left: 40%;
+}
+.rac7 {
+  left: 50%;
+}
+.rac8 {
+  left: 60%;
+}
+.rac9 {
+  left: 70%;
+}
+.rac10 {
+  left: 80%;
+}
+
+@keyframes dance {
+  0% {
+    transform: scaleX(-1);
+  }
+  50% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
